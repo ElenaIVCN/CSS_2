@@ -1,0 +1,100 @@
+body {
+    color: red;
+}
+
+* { 
+    font-family: verdana,sans-serif; 
+}
+
+div p { 
+    border: 1px solid red; 
+}
+
+div > span { 
+    color: blue; 
+}
+
+div + p {
+    color: green;
+}
+
+
+div ~ p { 
+    border: 1px solid rgb(22, 88, 109); 
+}
+
+
+[id] { 
+    color: lightblue; 
+}
+
+[disabled] {
+    color: lightgrey;
+}
+
+[id="container"] { 
+    border: 1px solid lightsalmon; 
+}
+[class~="error"] { 
+    color: red; 
+}
+[id|="main"] { 
+    color: rgb(100, 20, 80); 
+} 
+
+    /* main-article */
+
+    [href^="https"] { 
+        color: lightseagreen; 
+    }
+
+
+
+
+
+    li:first-child {
+        color: lime
+    }
+
+    ol > li:nth-of-type(even) {
+        color: saddlebrown;
+    }
+
+    :checked {
+        width: 30 px;
+        height: 30 px;
+    }
+
+    :checked  + label {
+        color: yellowgreen;
+    }
+
+    /* unvisited link */
+    a:link {
+        color: red;
+      }
+      
+      /* visited link */
+      a:visited {
+        color: green;
+      }
+      
+      /* mouse over link */
+      a:hover {
+        color: hotpink;
+      }
+      
+      /* selected link */
+      a:active {
+        color: blue;
+      }
+    
+      q::before {
+        content: "«";
+        color: blue;
+       }
+    
+       q::after {
+        content: "»";
+        color: red;
+       }
